@@ -15,6 +15,9 @@ import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/uti
 
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 
+import vercel from '@astrojs/vercel/serverless';
+
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const whenExternalScripts = (items = []) =>
@@ -29,7 +32,13 @@ export default defineConfig({
   base: SITE.base,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
-  output: 'static',
+  output: 'server',
+
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
 
   image: {
     service: squooshImageService(),
