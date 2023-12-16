@@ -1,7 +1,7 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { defineConfig, squooshImageService } from 'astro/config';
+import { defineConfig } from 'astro/config';
 
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
@@ -16,7 +16,6 @@ import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/uti
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 
 import vercel from '@astrojs/vercel/serverless';
-
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -38,11 +37,12 @@ export default defineConfig({
     webAnalytics: {
       enabled: true,
     },
-  }),
+    speedInsights: {
+      enabled: true,
+    },
+    imageService: true,
 
-  image: {
-    service: squooshImageService(),
-  },
+  }),
 
   integrations: [
     tailwind({
