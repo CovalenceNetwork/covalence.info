@@ -144,8 +144,8 @@ export const footerData = {
   ],
   socialLinks: [
     { ariaLabel: 'Bluesky', icon: 'tabler:mood-smile-beam', href: 'https://bsky.app/profile/covalence.info' },
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' }
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://twitter.com/CovalenceWorld' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/CovalenceNetwork' }
   ],
   footNote: `
     All rights reserved · ${new Date().getFullYear()}
