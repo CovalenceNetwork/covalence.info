@@ -11,9 +11,10 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Brands from '~/components/widgets/Brands.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Covalence - Collaborative ownership empowering organizations and projects',
   ignoreTitleTemplate: true,
 };
 ---
@@ -46,42 +47,42 @@ const metadata = {
   <Features
     id="features"
     title="Features"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    subtitle="Capabilities of a new paradigm"
     items={[
       {
-        title: '',
+        title: 'Valuation and distribution',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Enabling projects to perform valuation and distribution.',
+        icon: 'tabler:math-integral',
       },
       {
-        title: 'Flexible toolkit',
+        title: 'Tailored to your context',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          'Easily craft a methodology that fits your organization or project, with a range of options to choose from.',
         icon: 'tabler:components',
       },
       {
         title: 'Opt-in privacy',
         description:
           'Use methodologies where everything is private, leveraging fully homomorphic encryption.',
-        icon: 'tabler:list-check',
+        icon: 'tabler:shield',
       },
       {
         title: 'Open source',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'All code is open source, and we encourage you to contribute to the project.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Dynamic',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          "Leverage dynamic data for powerful methodologies, such as on-chain, off-chain via oracles, etc.",
+        icon: 'tabler:affiliate',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'General toolkit',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+          'A general toolkit flexibly supporting a multitude of methologies.',
         icon: 'tabler:bulb',
       },
     ]}
@@ -89,96 +90,77 @@ const metadata = {
 
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="How to use"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Methodology determination</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          "Using Covalence's methodology builder, you can easily craft a methodology that fits your organization or project, with a range of options to choose from.",
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
+        title: 'Step 2: <span class="font-medium">Group uses methodology</em>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          "The group uses the methodology to track their contributions or other relevant data. This will lead to valuation and distribution.",
+        icon: 'tabler:activity',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Benefit, iterate</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'Each participant will benefit from the process. The group can iterate on the methodology to improve it.',
+        icon: 'tabler:repeat',
       },
       {
-        title: 'Ready!',
+        title: 'Enjoy',
         icon: 'tabler:check',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: 'https://images.unsplash.com/photo-1548318281-7da3085ce691?q=80&w=2841&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       alt: 'Steps image',
     }}
   />
 
-
-
   <Features2
-    title="Explore our diverse templates"
-    subtitle="Discover our selection below to streamline and elevate your projects."
+    title="Use cases"
+    subtitle="The many useful ways of Covalence"
     columns={3}
     items={[
       {
-        title: 'Educational',
+        title: 'Captable management',
         description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
-        icon: 'tabler:school',
-      },
-      {
-        title: 'Interior Design',
-        description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
-      },
-      {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
-      },
-      {
-        title: 'E-commerce',
-        description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
-      },
-      {
-        title: 'Blog',
-        description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
+          'Trustworthy and flexible management of capitalization table, with support for the tried-and-true models as well as new ones.',
         icon: 'tabler:article',
       },
       {
-        title: 'Business',
+        title: 'Music and movies',
         description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
+          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
+        icon: 'tabler:music',
       },
       {
-        title: 'Branding',
+        title: 'Open source',
         description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
+          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
+        icon: 'tabler:brand-open-source',
       },
       {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
+        title: 'Fund accounting',
+        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
+        icon: 'tabler:abacus',
       },
       {
-        title: 'Fashion Design',
+        title: 'Open datasets',
         description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
+          'Incentivizing content creation or curation.',
+        icon: 'tabler:database',
       },
+      {
+        title: 'DAOs',
+        description:
+          'A toolkit for DAOs to manage their captables and other assets.',
+        icon: 'tabler:users',
+      }
     ]}
   />
 
@@ -189,35 +171,38 @@ const metadata = {
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'How to use it?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+        "As of late 2023 and early 2024, we are operating in a private alpha stage. We ask you to reach out so we can discuss your requirements and work together closely for success."
       },
       {
-        title: 'What do I need to start?',
+        title: 'What is Covalence?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'Covalence is a toolkit enabling tailored equity methodologies for organizations and projects, big and small. It is a new paradigm for collaborative ownership, empowering organizations and projects.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Does it require web3?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "It doesn't require web3 to use the service, as one can log in with common authentication providers. That said, Covalence is built on decentralized technologies to offer its full potential.",
       },
       {
-        title: "What's something that you don't understand?",
+      title: 'Licensing',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "We are using the AGPLv3 license for the codebase, and the CC-BY-SA 4.0 license for the content. We offer a commercial license for those who need it. Please reach out for more information.",
       },
+    ]}
+  />
+
+  <Brands
+    title="Trusted by"
+    subtitle="At our core, we believe in collaboration."
+    icons={[]}
+    images={[
       {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
+        src: '~/assets/images/others/film3.png',
+        alt: 'Film3',
+        url: 'https://film3.org',
+      }
     ]}
   />
 
