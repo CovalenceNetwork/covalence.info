@@ -41,7 +41,7 @@ export default defineConfig({
       enabled: true,
     },
     imageService: true,
-
+    includeFiles: ['./src/config.yaml'],
   }),
 
   integrations: [
