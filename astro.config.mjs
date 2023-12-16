@@ -37,9 +37,6 @@ export default defineConfig({
     webAnalytics: {
       enabled: true,
     },
-    speedInsights: {
-      enabled: true,
-    },
     imageService: true,
     includeFiles: ['./src/config.yaml'],
   }),
