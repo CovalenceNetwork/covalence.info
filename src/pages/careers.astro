@@ -1,0 +1,52 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'About us',
+};
+---
+
+<Layout metadata={metadata}>
+
+  <Features2
+    title="Looking for"
+    subtitle="The Covalence project is looking for help on the following topics:"
+    items={[
+      {
+        title: 'Community leaders',
+        description:
+        'Pilot an early version in your community. We will support you with the necessary tools and resources.',
+      },
+      {
+        title: 'Funding',
+        description:
+        "With additional funding, the project can be accelerated. We're looking for investors, grants, and sponsors.",
+      },
+      {
+        title: 'Economists',
+        description:
+        'Economic design, mechanism design, game theory, tokenomics, corporate finance, ...',
+      },
+      {
+        title: 'Solidity Developers',
+        description: "Help build flexible the smart contracts library, for multiple chains and use cases.",
+      },
+      {
+        title: 'Frontend Developers',
+        description: 'Mobile-friendly web app. UX is paramount.',
+      },
+      {
+        title: 'Your Idea Here',
+        description:
+        "Join this journey, bring your own perspective and creative energy.",
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+</Layout>
