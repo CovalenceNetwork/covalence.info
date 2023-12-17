@@ -14,7 +14,7 @@ export const headerData = {
       text: 'Company',
       links: [
         { text: 'About', href: getPermalink('/about') },
-        { text: 'Blog', href: 'https://covalence.substack.com/' },
+        { text: 'Blog', href: 'https://paragraph.xyz/@covalence' },
         { text: 'Careers', href: getPermalink('/careers') },
       ],
     },
@@ -37,7 +37,7 @@ export const footerData = {
       title: 'Company',
       links: [
         { text: 'About', href: getPermalink('/about') },
-        { text: 'Blog', href: 'https://covalence.substack.com/' },
+        { text: 'Blog', href: 'https://paragraph.xyz/@covalence' },
         { text: 'Careers', href: getPermalink('/careers') },
       ],
     },
