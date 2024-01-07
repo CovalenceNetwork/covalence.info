@@ -26,11 +26,11 @@ const {
         images.map(
           (image) =>
             image && (
-              <div class="flex justify-center col-span-1 my-2">
+              <div class="flex justify-center col-span-1 my-2 items-center">
                 <a href={image.url}>
                   <Image
-                    class="max-h-12"
-                    width={160}
+                    class="max-h-12 min-h-2"
+                    width={200}
                     {...image}
                   />
                 </a>
